@@ -36,7 +36,6 @@ We have put together a different page for each product to help you get started, 
 |  | CERTH SSI | Get started |
 | **Events and Message Streaming** | Token Streams | Get started |
 
-![](https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/docs/spacer.png.img.fullhd.medium.png)
 
 #### Documentation organization
 
