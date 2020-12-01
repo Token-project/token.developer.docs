@@ -1,6 +1,5 @@
 # Stamp API
 
-
 {% api-method method="post" host="https://api.ledgerproject.eu" path="/notarization/stamp" %}
 {% api-method-summary %}
 Stamp
@@ -64,7 +63,7 @@ Get a receipt from a HASH
 {% endapi-method-summary %}
 
 {% api-method-description %}
-Retrieves all receipts \(also known as proofs\) for a certain stampID
+Retrieves all receipts \(also known as proofs\) for a certain HASH
 {% endapi-method-description %}
 
 {% api-method-spec %}

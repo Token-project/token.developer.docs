@@ -24,8 +24,8 @@ We have put together a different page for each product to help you get started, 
 
 | Category | Service/Product |  |
 | :--- | :--- | :--- |
-| **Blockchain-based Notarization** | Stamping | [Get started](notarization/fundamentals.md) |
-|  | On-Chain anchoring | [Get started](notarization/fundamentals.md) |
+| **Blockchain-based Notarization** | Stamping | [Get started](fundamentals.md) |
+|  | On-Chain anchoring | [Get started](fundamentals.md) |
 |  | Sign | Get started |
 |  | Canis Major Blockchain Adaptor \(FIWARE\) | Get started |
 |  | LedgerSync \(FIWARE\) | Get started |
