@@ -11,11 +11,21 @@ Creates a timestamp for a given SHA-256 hash hexadecimal digest.
 
 {% api-method-spec %}
 {% api-method-request %}
-{% api-method-path-parameters %}
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=false %}
+s
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer: token
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+
+{% api-method-body-parameters %}
 {% api-method-parameter name="hash" type="string" required=true %}
 SHA-256 hash
 {% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
 {% api-method-response %}
@@ -25,7 +35,9 @@ SHA-256 hash
 {% endapi-method-response-example-description %}
 
 ```
-
+{
+    "transactionId": "1b9e6cb48098bc1fd8d8bd44c53e92c394c06a41ed50ab5845ed3e8b36e9f012"
+}
 ```
 {% endapi-method-response-example %}
 {% endapi-method-response %}
