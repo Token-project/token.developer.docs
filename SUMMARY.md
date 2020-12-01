@@ -12,13 +12,13 @@
 * [Token TestBed](fundamentals-1/token-testbed.md)
 * [API reference index](fundamentals-1/api-reference-index.md)
 
-## Notarization
+## Notarization APIs <a id="notarization"></a>
 
 * [Stamp API](notarization/stamp-api.md)
 * [Anchoring API](notarization/api-reference.md)
 * [Common endpoints](notarization/fundamentals.md)
 
-## Storage
+## Storage services <a id="storage"></a>
 
 * [Getting started](storage/fundamentals.md)
 * [IPFS Web Gateway](storage/ipfs-web-gateway.md)
