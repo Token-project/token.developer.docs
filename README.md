@@ -24,14 +24,14 @@ We have put together a different page for each product to help you get started, 
 
 | Category | Service/Product | **Details** |  |
 | :--- | :--- | :--- | :--- |
-| **Blockchain-based Notarization** | Stamping | TBD   | Get started |
-|  | On-Chain anchoring | TBD | Get started |
+| **Blockchain-based Notarization** | Stamping | TBD   | [Get started](notarization/fundamentals.md) |
+|  | On-Chain anchoring | TBD | [Get started](notarization/fundamentals.md) |
 |  | Sign | TBD | Get started |
 |  | Canis Major Blockchain Adaptor \(FIWARE\) | TBD | Get started |
 |  | LedgerSync \(FIWARE\) | TBD | Get started |
 | **Distributed and Decentralized Storage** | Token Storage Network | TBD | Get started |
-|  | IPFS Web Gateway | TBD | Get started |
-|  | IPFS Pinning Service | TBD | Get started |
+|  | IPFS Web Gateway | TBD | [Get started](storage/ipfs-web-gateway.md) |
+|  | IPFS Storage & Pinning Service | TBD | [Get started](storage/ipfs-storage-and-pinning-service/) |
 | **Decentralized and Self-Sovereign Identity** | Token Connect | TBD | Get started |
 |  | CERTH SSI | TBD | Get started |
 | **Events and Message Streaming** | Token Streams | TBD   | Get started |
