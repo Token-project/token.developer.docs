@@ -27,5 +27,5 @@
 
 ## Other
 
-* [Generate sha256 digests](other/cli.md)
+* [cli snippets](other/cli.md)
 

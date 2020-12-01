@@ -1,4 +1,4 @@
-# Generate sha256 digests
+# cli snippets
 
 ```text
 echo -n "Do I need to prove myself again?" | openssl dgst -sha256
