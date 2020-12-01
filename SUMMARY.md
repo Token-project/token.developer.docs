@@ -28,5 +28,4 @@
 ## Other
 
 * [Generate sha256 digests](other/cli.md)
-* [TokenServices](other/tokenservices.md)
 
