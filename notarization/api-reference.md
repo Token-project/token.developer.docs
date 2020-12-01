@@ -13,11 +13,11 @@ Creates a timestamp for a given SHA-256 hash hexadecimal digest.
 {% api-method-request %}
 {% api-method-headers %}
 {% api-method-parameter name="Content-Type" type="string" required=false %}
-s
+application/x-www-form-urlencoded
 {% endapi-method-parameter %}
 
 {% api-method-parameter name="Authorization" type="string" required=true %}
-Bearer: token
+Bearer: TOKEN
 {% endapi-method-parameter %}
 {% endapi-method-headers %}
 
