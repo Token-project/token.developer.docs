@@ -1,8 +1,6 @@
 # Developer apps
 
-
-
-### What's a developer App? 
+### What is a developer App? 
 
 Accessing the APIs requires a set of credentials that you must pass with each request. These credentials can come in different forms depending on the type of authentication that is required by the specific endpoint that you are using. For example, user context requires an API key and secret and a set of access tokens that are specific to the user that you are making the request on behalf of. 
 

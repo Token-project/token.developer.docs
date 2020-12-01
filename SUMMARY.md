@@ -4,9 +4,9 @@
 
 ## Fundamentals <a id="fundamentals-1"></a>
 
+* [Developer portal](fundamentals-1/developer-portal.md)
 * [Organizations](fundamentals-1/organizations.md)
 * [Developer apps](fundamentals-1/fundamentals.md)
-* [Developer portal](fundamentals-1/developer-portal.md)
 * [Authentication](fundamentals-1/auth.md)
 * [Rate limits](fundamentals-1/rate-limits.md)
 * [Token TestBed](fundamentals-1/token-testbed.md)
