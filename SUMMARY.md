@@ -20,7 +20,6 @@
 
 ## Storage services <a id="storage"></a>
 
-* [Getting started](storage/fundamentals.md)
 * [IPFS Web Gateway](storage/ipfs-web-gateway.md)
 * [IPFS Storage & Pinning Service](storage/ipfs-storage-and-pinning-service/README.md)
   * [API reference](storage/ipfs-storage-and-pinning-service/api-reference.md)
