@@ -8,21 +8,24 @@
 * [Developer apps](fundamentals-1/fundamentals.md)
 * [Developer portal](fundamentals-1/developer-portal.md)
 * [Authentication](fundamentals-1/auth.md)
+* [Rate limits](fundamentals-1/rate-limits.md)
 * [Token TestBed](fundamentals-1/token-testbed.md)
 * [API reference index](fundamentals-1/api-reference-index.md)
 
-## Notarization API
+## Notarization
 
-* [Fundamentals](notarization-api/fundamentals.md)
-* [API reference](notarization-api/api-reference.md)
+* [Getting started](notarization/fundamentals.md)
+* [API reference](notarization/api-reference.md)
 
-## Storage APIs
+## Storage
 
-* [Fundamentals](storage-apis/fundamentals.md)
-* [TokenServices](storage-apis/tokenservices.md)
-* [API reference](storage-apis/api-reference.md)
+* [Getting started](storage/fundamentals.md)
+* [IPFS Web Gateway](storage/ipfs-web-gateway.md)
+* [IPFS Storage & Pinning Service](storage/ipfs-storage-and-pinning-service/README.md)
+  * [API reference](storage/ipfs-storage-and-pinning-service/api-reference.md)
 
 ## Other
 
 * [Generate sha256 digests](other/cli.md)
+* [TokenServices](other/tokenservices.md)
 

@@ -24,6 +24,6 @@ TBD
 
 ### Next steps
 
-* Learn more about Apps.
-* Check out the developer portal overview.
+* Learn more about [Apps](fundamentals.md).
+* Check out the [developer portal overview](developer-portal.md).
 
