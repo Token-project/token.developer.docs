@@ -22,19 +22,19 @@ The Token developer platform is organized into four different categories, based 
 We have put together a different page for each product to help you get started, which you can access below:  
  
 
-| Category | Service/Product | **Details** |  |
-| :--- | :--- | :--- | :--- |
-| **Blockchain-based Notarization** | Stamping | TBD   | [Get started](notarization/fundamentals.md) |
-|  | On-Chain anchoring | TBD | [Get started](notarization/fundamentals.md) |
-|  | Sign | TBD | Get started |
-|  | Canis Major Blockchain Adaptor \(FIWARE\) | TBD | Get started |
-|  | LedgerSync \(FIWARE\) | TBD | Get started |
-| **Distributed and Decentralized Storage** | Token Storage Network | TBD | Get started |
-|  | IPFS Web Gateway | TBD | [Get started](storage/ipfs-web-gateway.md) |
-|  | IPFS Storage & Pinning Service | TBD | [Get started](storage/ipfs-storage-and-pinning-service/) |
-| **Decentralized and Self-Sovereign Identity** | Token Connect | TBD | Get started |
-|  | CERTH SSI | TBD | Get started |
-| **Events and Message Streaming** | Token Streams | TBD   | Get started |
+| Category | Service/Product |  |
+| :--- | :--- | :--- |
+| **Blockchain-based Notarization** | Stamping | [Get started](notarization/fundamentals.md) |
+|  | On-Chain anchoring | [Get started](notarization/fundamentals.md) |
+|  | Sign | Get started |
+|  | Canis Major Blockchain Adaptor \(FIWARE\) | Get started |
+|  | LedgerSync \(FIWARE\) | Get started |
+| **Distributed and Decentralized Storage** | Token Storage Network | Get started |
+|  | IPFS Web Gateway | [Get started](storage/ipfs-web-gateway.md) |
+|  | IPFS Storage & Pinning Service | [Get started](storage/ipfs-storage-and-pinning-service/) |
+| **Decentralized and Self-Sovereign Identity** | Token Connect | Get started |
+|  | CERTH SSI | Get started |
+| **Events and Message Streaming** | Token Streams | Get started |
 
 ![](https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/docs/spacer.png.img.fullhd.medium.png)
 
@@ -44,7 +44,7 @@ Our technical documentation has separate sections to help you work with each of 
 
 All the services APIs share similar fundamentals, and even include some common endpoint functionality. These shared concepts are discussed in the platform fundamentals section, including the following:
 
-* Developer portal, organizations, and apps
-* Authentication
-* Rate limits
+* [Developer portal](fundamentals-1/developer-portal.md), [organizations](fundamentals-1/organizations.md), and [apps](fundamentals-1/fundamentals.md)
+* [Authentication](fundamentals-1/auth.md)
+* [Rate limits](fundamentals-1/rate-limits.md)
 
