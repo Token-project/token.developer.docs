@@ -1,7 +1,5 @@
 # API reference
 
-## 📁 Collection: IPFS Cluster Proxy
-
 ### End-point: /add
 
 #### Description: The proxy adds the content to the local ipfs daemon and pins the resulting hash\[es\] in cluster.
@@ -155,50 +153,7 @@ Method: POST
 | stream-errors | Boolean |
 | quiet | Boolean |
 
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-
-
-## 📁 Collection: IPFS
-
-### End-point: /add
-
-#### Description: Add a file or directory to ipfs.
-
-Method: POST
-
-> ```text
-> {{protocol}}://{{host}}:{{port}}/{{services.ipfs}}/add?quiet=Boolean&quieter=Boolean&silent=Boolean&progress=Boolean&trickle=Boolean&only-hash=Boolean&wrap-with-directory=Boolean&chunker=String&pin=Boolean&raw-leaves=Boolean&nocopy=Boolean&fscache=Boolean&cid-version=Integer&hash=String&inline=Boolean&inline-limit=Integer
-> ```
->
-> #### Body formdata
-
-| Param | value | Type |
-| :--- | :--- | :--- |
-| path |  | file |
-
-#### Query Params
-
-| Param | value |
-| :--- | :--- |
-| quiet | Boolean |
-| quieter | Boolean |
-| silent | Boolean |
-| progress | Boolean |
-| trickle | Boolean |
-| only-hash | Boolean |
-| wrap-with-directory | Boolean |
-| chunker | String |
-| pin | Boolean |
-| raw-leaves | Boolean |
-| nocopy | Boolean |
-| fscache | Boolean |
-| cid-version | Integer |
-| hash | String |
-| inline | Boolean |
-| inline-limit | Integer |
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+### 
 
 ### End-point: /block/get
 
@@ -266,24 +221,7 @@ Method: POST
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-### End-point: /pin/add
 
-#### Description: Pin objects to local storage.
-
-Method: POST
-
-> ```text
-> /api/v0/pin/add?arg=String&progress=Boolean
-> ```
->
-> #### Query Params
-
-| Param | value |
-| :--- | :--- |
-| arg | String |
-| progress | Boolean |
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
 ### End-point: /object/stat
 
