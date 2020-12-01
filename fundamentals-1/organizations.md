@@ -9,7 +9,7 @@ Organizations profiles allow you to organize your work based on how you intend t
 
 To create an Organization, click on “Create an Organization” in your [Organizations page](https://developers.token-project.eu/organizations). You will be prompted to enter your Organization details.
 
-![](../.gitbook/assets/testbed-create-org.png)
+![](../.gitbook/assets/testbed-create-org%20%281%29.png)
 
 #### Creating an App for your Organization
 
