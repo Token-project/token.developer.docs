@@ -1,7 +1,5 @@
 # Authentication
 
-### API Key Authentication
-
 The Token APIs are secured by generated APP credentials and JWT Bearer Tokens:
 
 * Scoped to a single App acting on behalf of a single Organization
@@ -47,15 +45,20 @@ curl --request GET \
   --header 'authorization: Bearer $BEARER_TOKEN'
 ```
 
-API calls using JWT Bearer Token are rate limited per endpoint at the App-level.
+API calls using JWT Bearer Token are [rate limited](rate-limits.md) per endpoint at the App-level.
 
 ### Debugging a JWT Bearer Token
 
+To see detailed info for an access token go to the [Developer Portal](https://developers.token-project.eu)-&gt;[Developer tools](https://developers.token-project.eu/tools/)-&gt;[Access token debugger](https://developers.token-project.eu/tools/debugger) and enter your JWT Token.
+
+If the token is valid you'll receive a response similar to this:
+
 ```javascript
+{
   "sub": "LJHyxcBqWKLhZdxZo9X5yBFvJQpWYfCT",
   "owner": {
-    "uid": "bBZ7xnANjCD3mhcW2",
-    "uname": "xurxo",
+    "uid": "bBZ7xnA343dcW2",
+    "uname": "username",
     "uavatar": "//www.gravatar.com/avatar/43572c4f5cd2f4532a7c67cd529ceb4b?d=identicon"
   },
   "app_name": "My App",
@@ -64,10 +67,7 @@ API calls using JWT Bearer Token are rate limited per endpoint at the App-level.
     "storage:*",
     "ipfs:*",
     "streams:*",
-    "connect:*",
-    "infura:*",
-    "cluster:*",
-    "sso"
+    "connect:*"
   ],
   "aud": "https://developers.token-project.eu",
   "grant_type": "client_credentials",

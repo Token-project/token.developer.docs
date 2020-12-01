@@ -6,20 +6,16 @@ The Token developer portal is a set of self-serve tools that developers can use 
 
 The developer portal is available [here](https://developers.token-project.eu).
 
-In the portal, you have the opportunity to:
+In the portal, developers have the opportunity to:
 
 * Create a developer account.
-* Create and manage your [Organizations](organizations.md), [Apps](fundamentals.md) and Teams.
-* Generate your [Apps credentials](auth.md).
-* Access to additional developer tools.
+* Create and manage their [Organizations](organizations.md) and [Apps](fundamentals.md).
+* Generate their [Apps credentials](auth.md).
+* Access additional developer tools and resources.
 * Access the different APIs documentation and information about the Token services. 
 * Get insights about your APIs and services usage \(Coming soon\)
 
-#### How to create a developer account
-
-Developer accounts will at first only be available to the partners.
-
-[Create a developer account.](https://developers.token-project.eu/signup)
+**Please note:** Developer accounts will at first only be available to the partners.
 
 ###  Next steps
 

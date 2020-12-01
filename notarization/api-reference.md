@@ -1,6 +1,40 @@
 # API reference
 
-## 📁 Collection: Notarization
+{% api-method method="post" host="http://api.ledgerproject.eu" path="/notarization/stamp" %}
+{% api-method-summary %}
+Stamp
+{% endapi-method-summary %}
+
+{% api-method-description %}
+Creates a timestamp for a given SHA-256 hash hexadecimal digest.
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-path-parameters %}
+{% api-method-parameter name="hash" type="string" required=true %}
+SHA-256 hash
+{% endapi-method-parameter %}
+{% endapi-method-path-parameters %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```
+
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+
+
+📁 Collection: Notarization
 
 ### End-point: Stamping a hash
 
