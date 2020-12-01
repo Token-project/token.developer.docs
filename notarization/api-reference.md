@@ -51,9 +51,7 @@ curl -L -X POST 'https://api.token-project.eu:443/notarization/stamp' \
 --data-urlencode 'hash=$HASH'
 ```
 
-
-
-{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/stamp" %}
+{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/stamp/$STAMP" %}
 {% api-method-summary %}
 Stamp
 {% endapi-method-summary %}
@@ -120,8 +118,6 @@ The response is a JSON-encoded object containing an array of stamps. If a certai
 | Content-Type | application/x-www-form-urlencoded |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-
 
 ## End-point: SignUp
 
