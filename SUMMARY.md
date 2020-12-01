@@ -14,8 +14,9 @@
 
 ## Notarization
 
-* [Getting started](notarization/fundamentals.md)
-* [API reference](notarization/api-reference.md)
+* [Common endpoints](notarization/fundamentals.md)
+* [Anchoring API](notarization/api-reference.md)
+* [Stamp API](notarization/stamp-api.md)
 
 ## Storage
 
