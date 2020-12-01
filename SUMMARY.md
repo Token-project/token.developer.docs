@@ -4,10 +4,12 @@
 
 ## Fundamentals <a id="fundamentals-1"></a>
 
-* [fundamentals](fundamentals-1/fundamentals.md)
-* [Token APIs](fundamentals-1/auth.md)
-* [API reference index](fundamentals-1/api-reference-index.md)
+* [Organizations](fundamentals-1/organizations.md)
+* [Developer apps](fundamentals-1/fundamentals.md)
+* [Developer portal](fundamentals-1/developer-portal.md)
+* [Authentication](fundamentals-1/auth.md)
 * [Token TestBed](fundamentals-1/token-testbed.md)
+* [API reference index](fundamentals-1/api-reference-index.md)
 
 ## Notarization API
 

@@ -22,12 +22,19 @@ The Token developer platform is organized into four different categories, based 
 We have put together a different page for each product to help you get started, which you can access below:  
  
 
-| Category | **Details** |  |
-| :--- | :--- | :--- |
-| **Blockchain-based Notarization** | TBD   | Get started |
-| **Distributed and Decentralized Storage** | TBD | Get started |
-| **Decentralized and Self-Sovereign Identity** | TBD | Get started |
-| **Events and Message Streaming** | TBD   | Get started |
+| Category | Service/Product | **Details** |  |
+| :--- | :--- | :--- | :--- |
+| **Blockchain-based Notarization** | Stamping | TBD   | Get started |
+|  | On-Chain anchoring | TBD | Get started |
+|  | Sign | TBD | Get started |
+|  | Canis Major Blockchain Adaptor \(FIWARE\) | TBD | Get started |
+|  | LedgerSync \(FIWARE\) | TBD | Get started |
+| **Distributed and Decentralized Storage** | Token Storage Network | TBD | Get started |
+|  | IPFS Web Gateway | TBD | Get started |
+|  | IPFS Pinning Service | TBD | Get started |
+| **Decentralized and Self-Sovereign Identity** | Token Connect | TBD | Get started |
+|  | CERTH SSI | TBD | Get started |
+| **Events and Message Streaming** | Token Streams | TBD   | Get started |
 
 ![](https://cdn.cms-twdigitalassets.com/content/dam/developer-twitter/docs/spacer.png.img.fullhd.medium.png)
 

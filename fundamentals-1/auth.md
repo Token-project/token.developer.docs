@@ -1,4 +1,4 @@
-# Token APIs
+# Authentication
 
 ### API Key Authentication
 
