@@ -8,7 +8,6 @@
 * [Token APIs](fundamentals-1/auth.md)
 * [API reference index](fundamentals-1/api-reference-index.md)
 * [Token TestBed](fundamentals-1/token-testbed.md)
-* [Generate sha256 digests](fundamentals-1/cli.md)
 
 ## Notarization API
 
@@ -20,4 +19,8 @@
 * [Fundamentals](storage-apis/fundamentals.md)
 * [TokenServices](storage-apis/tokenservices.md)
 * [API reference](storage-apis/api-reference.md)
+
+## Other
+
+* [Generate sha256 digests](other/cli.md)
 
