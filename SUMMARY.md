@@ -10,7 +10,6 @@
 * [Authentication](fundamentals-1/auth.md)
 * [Rate limits](fundamentals-1/rate-limits.md)
 * [Token TestBed](fundamentals-1/token-testbed.md)
-* [API reference index](fundamentals-1/api-reference-index.md)
 
 ## Notarization APIs <a id="notarization"></a>
 
