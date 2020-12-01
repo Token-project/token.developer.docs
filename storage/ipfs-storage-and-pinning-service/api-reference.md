@@ -7,7 +7,7 @@
 Method: POST
 
 > ```text
-> /api/v0/add?quiet=Boolean&quieter=Boolean&silent=Boolean&progress=Boolean&trickle=Boolean&only-hash=Boolean&wrap-with-directory=Boolean&chunker=String&pin=Boolean&raw-leaves=Boolean&nocopy=Boolean&fscache=Boolean&cid-version=Integer&hash=String&inline=Boolean&inline-limit=Integer
+> https://api.token-project.eu/ipfs/add?quiet=Boolean&quieter=Boolean&silent=Boolean&progress=Boolean&trickle=Boolean&only-hash=Boolean&wrap-with-directory=Boolean&chunker=String&pin=Boolean&raw-leaves=Boolean&nocopy=Boolean&fscache=Boolean&cid-version=Integer&hash=String&inline=Boolean&inline-limit=Integer
 > ```
 >
 > #### Body formdata
@@ -46,7 +46,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/pin/add?arg=String&progress=Boolean
+> https://api.token-project.eu/ipfs/pin/add?arg=String&progress=Boolean
 > ```
 >
 > #### Query Params
@@ -65,7 +65,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/pin/update?arg=String&arg=String&unpin=Boolean
+> https://api.token-project.eu/ipfs/pin/update?arg=String&arg=String&unpin=Boolean
 > ```
 >
 > #### Query Params
@@ -85,7 +85,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/pin/rm?arg=String
+> https://api.token-project.eu/ipfs/pin/rm?arg=String
 > ```
 >
 > #### Query Params
@@ -103,7 +103,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/repo/stat?size-only=Boolean&human=Boolean
+> https://api.token-project.eu/ipfs/repo/stat?size-only=Boolean&human=Boolean
 > ```
 >
 > #### Query Params
@@ -122,7 +122,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/pin/ls?arg=String&type=String&quiet=Boolean&stream=Boolean
+> https://api.token-project.eu/ipfs/pin/ls?arg=String&type=String&quiet=Boolean&stream=Boolean
 > ```
 >
 > #### Query Params
@@ -143,7 +143,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/repo/gc?stream-errors=Boolean&quiet=Boolean
+> https://api.token-project.eu/ipfs/repo/gc?stream-errors=Boolean&quiet=Boolean
 > ```
 >
 > #### Query Params
@@ -162,7 +162,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/block/get?arg=String
+> https://api.token-project.eu/ipfs/block/get?arg=String
 > ```
 >
 > #### Query Params
@@ -180,7 +180,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/block/put?format=String&mhtype=String&mhlen=Integer&pin=Boolean
+> https://api.token-project.eu/ipfs/block/put?format=String&mhtype=String&mhlen=Integer&pin=Boolean
 > ```
 >
 > #### Body formdata
@@ -207,7 +207,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/version?number=Boolean&commit=Boolean&repo=Boolean&all=Boolean
+> https://api.token-project.eu/ipfs/version?number=Boolean&commit=Boolean&repo=Boolean&all=Boolean
 > ```
 >
 > #### Query Params
@@ -230,7 +230,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/object/stat?arg=String&human=Boolean
+> https://api.token-project.eu/ipfs/object/stat?arg=String&human=Boolean
 > ```
 >
 > #### Query Params
@@ -249,7 +249,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/object/put?inputenc=String&datafieldenc=String&pin=Boolean&quiet=Boolean
+> https://api.token-project.eu/ipfs/object/put?inputenc=String&datafieldenc=String&pin=Boolean&quiet=Boolean
 > ```
 >
 > #### Body formdata
@@ -276,7 +276,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/object/get?arg=String&data-encoding=String
+> https://api.token-project.eu/ipfs/object/get?arg=String&data-encoding=String
 > ```
 >
 > #### Query Params
@@ -295,7 +295,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/object/data?arg=String
+> https://api.token-project.eu/ipfs/object/data?arg=String
 > ```
 >
 > #### Query Params
@@ -339,7 +339,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/dag/resolve?arg=String
+> https://api.token-project.eu/ipfs/dag/resolve?arg=String
 > ```
 >
 > #### Query Params
@@ -357,7 +357,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/dag/put?format=String&input-enc=String&pin=Boolean&hash=String
+> https://api.token-project.eu/ipfs/dag/put?format=String&input-enc=String&pin=Boolean&hash=String
 > ```
 >
 > #### Body formdata
@@ -384,7 +384,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/dag/get?arg=String
+> https://api.token-project.eu/ipfs/dag/get?arg=String
 > ```
 >
 > #### Query Params
@@ -402,7 +402,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/cat?arg=String&offset=Int64&length=Int64
+> https://api.token-project.eu/ipfs/cat?arg=String&offset=Int64&length=Int64
 > ```
 >
 > #### Query Params
@@ -422,7 +422,7 @@ Method: POST
 Method: POST
 
 > ```text
-> /api/v0/block/stat?arg=String
+> https://api.token-project.eu/ipfs/block/stat?arg=String
 > ```
 >
 > #### Query Params
