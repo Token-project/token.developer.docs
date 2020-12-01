@@ -51,16 +51,66 @@ curl -L -X POST 'https://api.token-project.eu:443/notarization/stamp' \
 --data-urlencode 'hash=$HASH'
 ```
 
-📁 Collection: Notarization
 
-## End-point: Stamping a hash
 
-### Description: Creates a timestamp for a given SHA-256 hash hexadecimal digest. Please note that POST requests must include the Content-Type: application/json header.
+{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/stamp" %}
+{% api-method-summary %}
+Stamp
+{% endapi-method-summary %}
 
-The response is JSON-encoded object containing the ID and the time of the stamp. The receipt object gives an estimated time in seconds for the different receipt types \(ethereum and bitcoin\) to be ready for retrieval. Method: POST
+{% api-method-description %}
+Retrieves all receipts \(also known as proofs\) for a certain stamp
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=false %}
+application/x-www-form-urlencoded
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer: $TOKEN
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+[
+    {
+        "docType": "stamp",
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1"
+    }
+]
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+```text
+curl -L -X GET 'https://api.token-project.eu:443/notarization/stamp/$STAMP' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'Authorization: Bearer $TOKEN' \
+--data-urlencode 'hash=$HASH'
+```
+
+⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+## End-point: Retrieving receipts for a stamp
+
+### Description: Retrieves all receipts \(also known as proofs in former Stampery API versions\) for a certain stamp.
+
+The response is a JSON-encoded object containing an array of stamps. If a certain receipt found inside a stamp is a number instead of an object, that number is the estimated number of seconds before the final receipt will be ready. Method: GET
 
 > ```text
-> http://api.ledgerproject.eu/stamp
+> {{protocol}}://{{host}}:{{port}}/{{services.notarization}}/stamp/2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1
 > ```
 >
 > ### Headers
@@ -69,13 +119,9 @@ The response is JSON-encoded object containing the ID and the time of the stamp.
 | :--- | :--- |
 | Content-Type | application/x-www-form-urlencoded |
 
-### 🔑 Authentication bearer
-
-| Param | value | Type |
-| :--- | :--- | :--- |
-| token | eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTAwMzM1NzksInVzZXJuYW1lIjoiam9yZ2U3NzMiLCJvcmdOYW1lIjoiT3JnMSIsImlhdCI6MTU0OTk5NzU3OX0.JZOoLBO5Jq5ed-2PUYctboVdxcLVm3kdGdpdAhTcADU | string |
-
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+
+
 
 ## End-point: SignUp
 
