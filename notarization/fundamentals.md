@@ -1,6 +1,6 @@
 # Common endpoints
 
-{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/blockinfos/stamp/keys/$HASH" %}
+{% api-method method="get" host="https://api.token-project.eu" path="/notarization/blockinfos/stamp/keys/$HASH" %}
 {% api-method-summary %}
 Get a record from a key
 {% endapi-method-summary %}
@@ -41,7 +41,7 @@ Bearer: $TOKEN
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.ledgerproject.eu" path="/blockinfos/transactions/$TRANSACTION\_ID" %}
+{% api-method method="get" host="https://api.token-project.eu" path="/blockinfos/transactions/$TRANSACTION\_ID" %}
 {% api-method-summary %}
 Get a transaction detail
 {% endapi-method-summary %}
@@ -525,7 +525,7 @@ Bearer: $TOKEN
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.ledgerproject.eu" path="/blockinfos/blocks/$BLOCK\_NUMBER" %}
+{% api-method method="get" host="https://api.token-project.eu" path="/blockinfos/blocks/$BLOCK\_NUMBER" %}
 {% api-method-summary %}
 Get a block detail
 {% endapi-method-summary %}

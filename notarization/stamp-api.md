@@ -1,6 +1,6 @@
 # Stamp API
 
-{% api-method method="post" host="https://api.ledgerproject.eu" path="/notarization/stamp" %}
+{% api-method method="post" host="https://api.token-project.eu" path="/notarization/stamp" %}
 {% api-method-summary %}
 Stamp
 {% endapi-method-summary %}
@@ -51,7 +51,7 @@ curl -L -X POST 'https://api.token-project.eu:443/notarization/stamp' \
 --data-urlencode 'hash=$HASH'
 ```
 
-{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/stamp/$STAMP" %}
+{% api-method method="get" host="https://api.token-project.eu" path="/notarization/stamp/$STAMP" %}
 {% api-method-summary %}
 Get a receipt from a HASH
 {% endapi-method-summary %}
@@ -98,7 +98,7 @@ curl -L -X GET 'https://api.token-project.eu:443/notarization/stamp/$STAMP' \
 -H 'Authorization: Bearer $TOKEN'
 ```
 
-{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/blockinfos/stamp/keys/$HASH" %}
+{% api-method method="get" host="https://api.token-project.eu" path="/notarization/blockinfos/stamp/keys/$HASH" %}
 {% api-method-summary %}
 Get a receipt from a Hash \[DEPRECATED\]
 {% endapi-method-summary %}
@@ -140,7 +140,7 @@ Bearer: $TOKEN
 {% endapi-method-spec %}
 {% endapi-method %}
 
-{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/stamps" %}
+{% api-method method="get" host="https://api.token-project.eu" path="/notarization/stamps" %}
 {% api-method-summary %}
 All stamps
 {% endapi-method-summary %}
