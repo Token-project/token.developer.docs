@@ -95,91 +95,165 @@ Bearer: $TOKEN
 ```text
 curl -L -X GET 'https://api.token-project.eu:443/notarization/stamp/$STAMP' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
--H 'Authorization: Bearer $TOKEN' \
---data-urlencode 'hash=$HASH'
+-H 'Authorization: Bearer $TOKEN'
 ```
 
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Retrieving receipts for a stamp
+{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/stamp/$STAMP" %}
+{% api-method-summary %}
+Stamp
+{% endapi-method-summary %}
 
-### Description: Retrieves all receipts \(also known as proofs in former Stampery API versions\) for a certain stamp.
+{% api-method-description %}
+Retrieves all receipts \(also known as proofs\) for a certain stamp
+{% endapi-method-description %}
 
-The response is a JSON-encoded object containing an array of stamps. If a certain receipt found inside a stamp is a number instead of an object, that number is the estimated number of seconds before the final receipt will be ready. Method: GET
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=false %}
+application/x-www-form-urlencoded
+{% endapi-method-parameter %}
 
-> ```text
-> {{protocol}}://{{host}}:{{port}}/{{services.notarization}}/stamp/2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1
-> ```
->
-> ### Headers
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer: $TOKEN
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
 
-| Content-Type | Value |
-| :--- | :--- |
-| Content-Type | application/x-www-form-urlencoded |
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+{% endapi-method-response-example-description %}
 
-## End-point: SignUp
+```text
+[
+    {
+        "docType": "stamp",
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1"
+    }
+]
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
-### Description: Creates a timestamp for a given SHA-256 hash hexadecimal digest. Please note that POST requests must include the Content-Type: application/json header.
-
-The response is JSON-encoded object containing the ID and the time of the stamp. The receipt object gives an estimated time in seconds for the different receipt types \(ethereum and bitcoin\) to be ready for retrieval. Method: POST
-
-> ```text
-> {{protocol}}://{{host}}:{{port}}/{{services.notarization}}/users
-> ```
->
-> ### Headers
-
-| Content-Type | Value |
-| :--- | :--- |
-| Content-Type | application/x-www-form-urlencoded |
-
-### 🔑 Authentication noauth
-
-| Param | value | Type |
-| :--- | :--- | :--- |
+```text
+curl -L -X GET 'https://api.token-project.eu:443/notarization/stamp/$STAMP' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'Authorization: Bearer $TOKEN'
+```
 
 
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
-## End-point: Retrieving all stamps
 
-### Description: Retrieves all stamps made by the requesting client, ordered by date, from newest to oldest, paginated in chunks of 50.
+{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/blockinfos/stamp/keys/$HASH" %}
+{% api-method-summary %}
+Stamp blockinfo
+{% endapi-method-summary %}
 
-You can add ?page=N at the end of the URL in order to show the Nth page. If N is not specified, it is assumed to be 0 and therefore the last 50 stamps are returned.
+{% api-method-description %}
+Retrieves all receipts \(also known as proofs\) for a certain hash
+{% endapi-method-description %}
 
-The response is a JSON-encoded object containing an array of stamps. If a certain receipt found inside a stamp is a number instead of an object, that number is the estimated number of seconds before the final receipt will be ready. Method: GET
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=false %}
+application/x-www-form-urlencoded
+{% endapi-method-parameter %}
 
-> ```text
-> {{protocol}}://{{host}}:{{port}}/{{services.notarization}}/stamps
-> ```
->
-> ### Headers
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer: $TOKEN
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
 
-| Content-Type | Value |
-| :--- | :--- |
-| Content-Type | application/x-www-form-urlencoded |
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
 
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
+{% endapi-method-response-example-description %}
 
-## End-point: blockinfos transactionID
+```text
+[
+    {
+        "docType": "stamp",
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1"
+    }
+]
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
 
-### Description: Retrieves all stamps made by the requesting client, ordered by date, from newest to oldest, paginated in chunks of 50.
+```text
+curl -L -X GET 'https://api.token-project.eu:443/notarization/blockinfos/stamp/keys/$HASH' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'Authorization: Bearer $TOKEN'
+```
 
-You can add ?page=N at the end of the URL in order to show the Nth page. If N is not specified, it is assumed to be 0 and therefore the last 50 stamps are returned.
 
-The response is a JSON-encoded object containing an array of stamps. If a certain receipt found inside a stamp is a number instead of an object, that number is the estimated number of seconds before the final receipt will be ready. Method: GET
 
-> ```text
-> {{protocol}}://{{host}}:{{port}}/{{services.notarization}}/blockinfos/transactions/582dfec2972af002022b1a84e0fe2605464846233f4c05edc4e91825f143b9c0
-> ```
->
-> ### Headers
+{% api-method method="get" host="https://api.ledgerproject.eu" path="/notarization/stamps" %}
+{% api-method-summary %}
+All stamps 
+{% endapi-method-summary %}
 
-| Content-Type | Value |
-| :--- | :--- |
-| Content-Type | application/x-www-form-urlencoded |
+{% api-method-description %}
+Retrieves all stamps for the actual user
+{% endapi-method-description %}
+
+{% api-method-spec %}
+{% api-method-request %}
+{% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=false %}
+application/x-www-form-urlencoded
+{% endapi-method-parameter %}
+
+{% api-method-parameter name="Authorization" type="string" required=true %}
+Bearer: $TOKEN
+{% endapi-method-parameter %}
+{% endapi-method-headers %}
+{% endapi-method-request %}
+
+{% api-method-response %}
+{% api-method-response-example httpCode=200 %}
+{% api-method-response-example-description %}
+
+{% endapi-method-response-example-description %}
+
+```text
+[
+    {
+        "docType": "stamp",
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1"
+    },
+    {
+        "docType": "stamp",
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed16"
+    },
+    {
+        "docType": "stamp",
+        "hash": "oiam9yZ2U3NzMiLCJvcmdOYW1lIjoiT3JnMSIsImlhdCI6MTU0OTk5NzU3OX0"
+    }
+    ...
+]
+```
+{% endapi-method-response-example %}
+{% endapi-method-response %}
+{% endapi-method-spec %}
+{% endapi-method %}
+
+```text
+curl -L -X GET 'https://api.token-project.eu:443/notarization/blockinfos/transactions/$TRANSACTION_ID' \
+-H 'Content-Type: application/x-www-form-urlencoded' \
+-H 'Authorization: Bearer $TOKEN'
+```
+
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
 
@@ -222,42 +296,3 @@ The response is a JSON-encoded object containing an array of stamps. If a certai
 | Content-Type | application/x-www-form-urlencoded |
 
 ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: blockinfos
-
-### Description: Retrieves all stamps made by the requesting client, ordered by date, from newest to oldest, paginated in chunks of 50.
-
-You can add ?page=N at the end of the URL in order to show the Nth page. If N is not specified, it is assumed to be 0 and therefore the last 50 stamps are returned.
-
-The response is a JSON-encoded object containing an array of stamps. If a certain receipt found inside a stamp is a number instead of an object, that number is the estimated number of seconds before the final receipt will be ready. Method: GET
-
-> ```text
-> {{protocol}}://{{host}}:{{port}}/{{services.notarization}}/blockinfos/stamp/keys/blablabla
-> ```
->
-> ### Headers
-
-| Content-Type | Value |
-| :--- | :--- |
-| Content-Type | application/x-www-form-urlencoded |
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
-## End-point: Retrieving receipts for a stamp
-
-### Description: Retrieves all receipts \(also known as proofs in former Stampery API versions\) for a certain stamp.
-
-The response is a JSON-encoded object containing an array of stamps. If a certain receipt found inside a stamp is a number instead of an object, that number is the estimated number of seconds before the final receipt will be ready. Method: GET
-
-> ```text
-> {{protocol}}://{{host}}:{{port}}/{{services.notarization}}/stamp/2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1
-> ```
->
-> ### Headers
-
-| Content-Type | Value |
-| :--- | :--- |
-| Content-Type | application/x-www-form-urlencoded |
-
-⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃ ⁃
-
