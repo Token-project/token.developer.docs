@@ -4,7 +4,7 @@ description: >-
   of the Token Platform.
 ---
 
-# Docs
+# Getting started
 
 ### Get started with the Token platform
 
