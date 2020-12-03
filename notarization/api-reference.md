@@ -25,6 +25,9 @@ Bearer: $TOKEN
 {% api-method-parameter name="hash" type="string" required=true %}
 SHA-256 hash
 {% endapi-method-parameter %}
+{% api-method-parameter name="data" type="string" required=true %}
+Data to be anchored
+{% endapi-method-parameter %}
 {% endapi-method-body-parameters %}
 {% endapi-method-request %}
 
@@ -83,7 +86,8 @@ Bearer: $TOKEN
 [
     {
         "docType": "stamp",
-        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1"
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1",
+        "data": "------DATA-----"
     }
 ]
 ```
@@ -131,7 +135,8 @@ Bearer: $TOKEN
 [
     {
         "docType": "stamp",
-        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1"
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1",
+        "data": "------DATA-----"
     }
 ]
 ```
@@ -178,15 +183,18 @@ Bearer: $TOKEN
 [
     {
         "docType": "stamp",
-        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1"
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed1",
+        "data": "------DATA-----"
     },
     {
         "docType": "stamp",
-        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed16"
+        "hash": "2f3f3a85340bde09b505b0d37235d1d32a674e43a66229f9a205e7d8d5328ed16",
+        "data": "------DATA-----"
     },
     {
         "docType": "stamp",
-        "hash": "oiam9yZ2U3NzMiLCJvcmdOYW1lIjoiT3JnMSIsImlhdCI6MTU0OTk5NzU3OX0"
+        "hash": "oiam9yZ2U3NzMiLCJvcmdOYW1lIjoiT3JnMSIsImlhdCI6MTU0OTk5NzU3OX0",
+        "data": "------DATA-----"
     }
     ...
 ]
