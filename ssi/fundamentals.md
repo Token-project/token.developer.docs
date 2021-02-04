@@ -56,9 +56,15 @@ Response
 
 ### Send a schema to the ledger
 
+POST: /schemas \(Sends a schema to the ledger\)
+
 Parameters
 
+![](../.gitbook/assets/8.png)
+
 Response
+
+![](../.gitbook/assets/9.png)
 
 ### Send a credential definition to the ledger
 
