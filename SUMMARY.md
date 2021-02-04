@@ -23,6 +23,10 @@
 * [IPFS Storage & Pinning Service](storage/ipfs-storage-and-pinning-service/README.md)
   * [API reference](storage/ipfs-storage-and-pinning-service/api-reference.md)
 
+## SSI
+
+* [Fundamentals](ssi/fundamentals.md)
+
 ## Other
 
 * [cli snippets](other/cli.md)
