@@ -68,23 +68,43 @@ Response
 
 ### Send a credential definition to the ledger
 
+POST: /credential-definitions \(Sends a credential definition to the ledger\)
+
 Parameters
 
+![](../.gitbook/assets/10.png)
+
 Response
+
+![](../.gitbook/assets/11.png)
 
 ### Receive a new connection invitation\(User\)
 
+POST: /connections/receive-invitation \(Receive a new connection invitation\)
+
 Parameters
 
+![](../.gitbook/assets/12.png)
+
 Response
+
+![](../.gitbook/assets/13.png)
 
 ### Send Issuer a credential proposal
 
+POST: /issue-credential/send-proposal \(Send issuer a credential proposal\)
+
 Parameters
+
+![](../.gitbook/assets/14.png)
 
 Response
 
-Did example
+![](../.gitbook/assets/15.png)
+
+
+
+**Did example**
 
 ```text
 {
@@ -95,7 +115,7 @@ Did example
 }
 ```
 
-Schema example
+**Schema example**
 
 ```text
 {
