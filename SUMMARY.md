@@ -25,7 +25,7 @@
 
 ## SSI
 
-* [Intro](ssi/fundamentals.md)
+* [Introduction](ssi/fundamentals.md)
 * [Architecture](ssi/architecture.md)
 * [API reference](ssi/endpoints.md)
 

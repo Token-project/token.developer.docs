@@ -1,4 +1,4 @@
-# Endpoints
+# API reference
 
 ## Create a local did for the wallet \(User\)
 
@@ -69,8 +69,6 @@ Parameters
 Response
 
 ![](../.gitbook/assets/15.png)
-
-
 
 **Did example**
 
