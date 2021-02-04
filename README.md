@@ -31,7 +31,7 @@ We have put together a different page for each product to help you get started, 
 |  | IPFS Web Gateway | [Get started](storage/ipfs-web-gateway.md) |
 |  | IPFS Storage & Pinning Service | [Get started](storage/ipfs-storage-and-pinning-service/) |
 | **Decentralized and Self-Sovereign Identity** | Token Connect | Get started |
-|  | CERTH SSI | Get started |
+|  | CERTH SSI | [Get started](ssi/fundamentals.md) |
 | **Events and Message Streaming** | Token Streams | Get started |
 
 ### Documentation organization
