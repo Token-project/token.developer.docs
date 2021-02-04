@@ -34,19 +34,25 @@ The user, after registers successfully, can log in to the platform with the DID 
 
 ### Create a local did for the wallet \(User\)
 
-Parameters
+POST: /wallet/did/create \(Create a local DID\)
 
+**Parameters:** No parameters
 
+**Response**
 
-Response
-
-
+![](../.gitbook/assets/5.png)
 
 ### Create a new connection invitation \(Municipality\)
 
+POST: /connections/create-invitation \(Create a new connection invitation\)
+
 Parameters
 
+![](../.gitbook/assets/6.png)
+
 Response
+
+![](../.gitbook/assets/7.png)
 
 ### Send a schema to the ledger
 
