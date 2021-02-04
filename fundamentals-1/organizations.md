@@ -9,13 +9,13 @@ Organizations profiles allow you to organize your work based on how you intend t
 
 To create an Organization, click on “Create an Organization” in your [Organizations page](https://developers.token-project.eu/organizations). You will be prompted to enter your Organization details.
 
-![](../.gitbook/assets/testbed-create-org%20%281%29.png)
+![](../.gitbook/assets/testbed-create-org%20%281%29%20%281%29.png)
 
 #### Creating an App for your Organization
 
 To create an App for your Organization, click on “New app” in your [Applications page](https://developers.token-project.eu/organizations). The App is where you can generate an APP ID and API secret key to start using the Token APIs.
 
-![](../.gitbook/assets/testbed-create-app%20%281%29.png)
+![](../.gitbook/assets/testbed-create-app.png)
 
 #### Editing an Organization
 

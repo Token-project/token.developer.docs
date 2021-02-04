@@ -9,7 +9,7 @@ The Token APIs are secured by generated APP credentials and JWT Bearer Tokens:
 
 Use the [developer portal](https://developers.token-project.eu) to create a new App profile, or delete/revoke an existing App. Navigate to "[Applications](https://developers.token-project.eu/apps)", then click "+ New Application"
 
-![](../.gitbook/assets/testbed-create-app.png)
+![](../.gitbook/assets/testbed-create-app%20%281%29.png)
 
 ### Generating a JWT Bearer Token
 

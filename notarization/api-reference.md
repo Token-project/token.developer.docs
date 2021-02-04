@@ -25,6 +25,7 @@ Bearer: $TOKEN
 {% api-method-parameter name="hash" type="string" required=true %}
 SHA-256 hash
 {% endapi-method-parameter %}
+
 {% api-method-parameter name="data" type="string" required=true %}
 Data to be anchored
 {% endapi-method-parameter %}
