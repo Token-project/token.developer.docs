@@ -25,8 +25,9 @@
 
 ## SSI
 
-* [Fundamentals](ssi/fundamentals.md)
-
+* [Intro](ssi/fundamentals.md)
+* [Architecture](ssi/architecture.md)
+* [API reference](ssi/endpoints.md)
 ## Other
 
 * [cli snippets](other/cli.md)
