@@ -1,3 +1,7 @@
+---
+description: API endpoints
+---
+
 # API reference
 
 ## Create a local did for the wallet \(User\)
