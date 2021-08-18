@@ -85,19 +85,25 @@ You must be aware that in some cases we may still process your Personal data, e
   <tr>
    <td>1) For using the website and ensuring its proper operation
    </td>
-   <td rowspan="2" >Legitimate interest of Funding Box (based on  Article 6, paragraph 1 (f) of GDPR) which is fulfilling the obligations and our other interests related to this purposes
+   <td>Legitimate interest of Funding Box (based on  Article 6, paragraph 1 (f) of GDPR) which is fulfilling the obligations and our other interests related to this purposes
    </td>
-   <td rowspan="3" >2 years from visiting website
+   <td>2 years from visiting website
    </td>
   </tr>
   <tr>
    <td>2) To possibly establish and enforce claims or defend against them
+   </td>
+   <td>Legitimate interest of Funding Box (based on  Article 6, paragraph 1 (f) of GDPR) which is fulfilling the obligations and our other interests related to this purposes
+   </td>   
+   <td>2 years from visiting website
    </td>
   </tr>
   <tr>
    <td>3) Marketing purpose
    </td>
    <td>Consent granted to FundingBox (based on  Article 6, paragraph 1 (a) of GDPR)
+   </td>
+   <td>2 years from visiting website
    </td>
   </tr>
 </table>
@@ -138,7 +144,7 @@ On the this website, we use cookies for the following purposes:
   <tr>
    <td>Administrator
    </td>
-   <td>Cookie name
+   <td width="20%">Cookie name
    </td>
    <td>Purposes of using cookies
    </td>
@@ -150,7 +156,7 @@ On the this website, we use cookies for the following purposes:
    </td>
    <td>_ga
    </td>
-   <td rowspan="2" >These cookies are used to collect information about how visitors use our website. We use the information to compile reports and to help us improve the website. The cookies collect information in a way that does not directly identify anyone, including the number of visitors to the website and blog, where visitors have come to the website from and the pages they visited.
+   <td>These cookies are used to collect information about how visitors use our website. We use the information to compile reports and to help us improve the website. The cookies collect information in a way that does not directly identify anyone, including the number of visitors to the website and blog, where visitors have come to the website from and the pages they visited.
    </td>
    <td>2 years
    </td>
@@ -160,6 +166,8 @@ On the this website, we use cookies for the following purposes:
    </td>
    <td>_gid
    </td>
+   <td>These cookies are used to collect information about how visitors use our website. We use the information to compile reports and to help us improve the website. The cookies collect information in a way that does not directly identify anyone, including the number of visitors to the website and blog, where visitors have come to the website from and the pages they visited.
+   </td>   
    <td>1 day
    </td>
   </tr>
@@ -176,7 +184,7 @@ On the this website, we use cookies for the following purposes:
   <tr>
    <td>Amplitude, Inc.
    </td>
-   <td>amplitude_id_fef1e872c952688acd962d30aa545b9etoken-project.eu
+   <td>amplitude_id_<br>fef1e872c952688acd962d30aa545b9<br>etoken-project.eu
    </td>
    <td>This cookie is used to uniquely identify the user's machine
    </td>
