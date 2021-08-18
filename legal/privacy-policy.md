@@ -144,7 +144,7 @@ On the this website, we use cookies for the following purposes:
   <tr>
    <td>Administrator
    </td>
-   <td width="20%">Cookie name
+   <td>Cookie name
    </td>
    <td>Purposes of using cookies
    </td>
@@ -184,7 +184,7 @@ On the this website, we use cookies for the following purposes:
   <tr>
    <td>Amplitude, Inc.
    </td>
-   <td>amplitude_id_<br>fef1e872c952688acd962d30aa545b9<br>etoken-project.eu
+   <td>amplitude_id_<br>fef1e872c952<br>688acd962d30aa545b9<br>etoken-project.eu
    </td>
    <td>This cookie is used to uniquely identify the user's machine
    </td>
