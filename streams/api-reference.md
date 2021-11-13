@@ -118,3 +118,35 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/my_consumer' \
     ]
 }'
 ```
+
+
+{% swagger baseUrl="https://api.token-project.eu" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/subscription" method="post" summary="Subscribes the consumer to a topic" %}
+{% swagger-description %}
+Subscribes the consumer to a topic
+{% endswagger-description %}
+
+{% swagger-parameter name="Content-Type" type="string" required="true" in="header" %}
+application/vnd.kafka.json.v2+json
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
+Bearer: $TOKEN
+{% endswagger-parameter %}
+
+{% swagger-parameter in="body" name="topics" type="Array" required="true" %}
+Array of topics to subscribe to
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="" %}
+```text
+Empty response
+```
+{% endswagger-response %}
+{% endswagger %}
+
+```
+curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/subscription' \
+-H 'Content-Type: application/vnd.kafka.json.v2+json' \
+-H 'Authorization: Bearer $TOKEN' \
+--data-raw '{"topics":["messaging"]}'
+```
