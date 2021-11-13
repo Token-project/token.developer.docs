@@ -23,7 +23,11 @@
 - [IPFS Storage & Pinning Service](storage/ipfs-storage-and-pinning-service/README.md)
   - [API reference](storage/ipfs-storage-and-pinning-service/api-reference.md)
 
-## SSI
+## Storage services <a id="streams"></a>
+
+- [API reference](streams/api-reference.md)
+
+## SSI <a id="ssi"></a>
 
 - [Introduction](ssi/fundamentals.md)
 - [Architecture](ssi/architecture.md)
