@@ -23,7 +23,7 @@
 - [IPFS Storage & Pinning Service](storage/ipfs-storage-and-pinning-service/README.md)
   - [API reference](storage/ipfs-storage-and-pinning-service/api-reference.md)
 
-## Storage services <a id="streams"></a>
+## Streams API <a id="streams"></a>
 
 - [API reference](streams/api-reference.md)
 

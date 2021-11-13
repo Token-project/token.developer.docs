@@ -12,6 +12,9 @@ Creates a topic.
 {% api-method-spec %}
 {% api-method-request %}
 {% api-method-headers %}
+{% api-method-parameter name="Content-Type" type="string" required=true %}
+application/json
+{% endapi-method-parameter %}
 {% api-method-parameter name="Authorization" type="string" required=true %}
 Bearer: $TOKEN
 {% endapi-method-parameter %}
