@@ -1,5 +1,7 @@
 # API reference
 
+## Producing messages
+
 {% swagger baseUrl="https://api.token-project.eu" path="/topics/topic" method="post" summary="Creates a topic" %}
 {% swagger-description %}
 Creates a topic.
@@ -31,45 +33,6 @@ curl -L -X POST 'https://api.token-project.eu/streams/topics/topic' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{"topic_name": "example"}'
-```
-
-{% swagger baseUrl="https://api.token-project.eu" path="consumers/my_consumer" method="post" summary="Creates a new consumer instance" %}
-{% swagger-description %}
-Creates a new consumer.
-{% endswagger-description %}
-
-{% swagger-parameter name="Content-Type" type="string" required="true" in="header" %}
-application/vnd.kafka.json.v2+json
-{% endswagger-parameter %}
-
-{% swagger-parameter name="Accept" type="string" required="true" in="header" %}
-application/vnd.kafka.json.v2+json
-{% endswagger-parameter %}
-
-{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
-Bearer: $TOKEN
-{% endswagger-parameter %}
-
-{% swagger-parameter name="auto.offset.reset" type="string" required="false" in="body" %}
-Sets the auto.offset.reset setting for the consumer
-{% endswagger-parameter %}
-
-{% swagger-response status="200" description="" %}
-```json
-{
-    "base_uri": "https://api.token-project.eu/streams/consumers/my_consumer/instances/33707dcc-022d-476e-b8bc-28d0ae2fbb35",
-    "instance_id": "33707dcc-022d-476e-b8bc-28d0ae2fbb35"
-}
-```
-{% endswagger-response %}
-{% endswagger %}
-
-```
-curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group' \
--H 'Content-Type: application/vnd.kafka.json.v2+json' \
--H 'Accept: application/vnd.kafka.json.v2+json' \
--H 'Authorization: Bearer $TOKEN' \
---data-raw '{"auto.offset.reset": "earliest"}'
 ```
 
 {% swagger baseUrl="https://api.token-project.eu" path="topic/topic_name" method="post" summary="Produces JSON messages to a topic" %}
@@ -117,6 +80,48 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/my_consumer' \
         }
     ]
 }'
+```
+
+## Consuming messages
+
+
+{% swagger baseUrl="https://api.token-project.eu" path="consumers/my_consumer" method="post" summary="Creates a new consumer instance" %}
+{% swagger-description %}
+Creates a new consumer.
+{% endswagger-description %}
+
+{% swagger-parameter name="Content-Type" type="string" required="true" in="header" %}
+application/vnd.kafka.json.v2+json
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Accept" type="string" required="true" in="header" %}
+application/vnd.kafka.json.v2+json
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
+Bearer: $TOKEN
+{% endswagger-parameter %}
+
+{% swagger-parameter name="auto.offset.reset" type="string" required="false" in="body" %}
+Sets the auto.offset.reset setting for the consumer
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="" %}
+```json
+{
+    "base_uri": "https://api.token-project.eu/streams/consumers/my_consumer/instances/33707dcc-022d-476e-b8bc-28d0ae2fbb35",
+    "instance_id": "33707dcc-022d-476e-b8bc-28d0ae2fbb35"
+}
+```
+{% endswagger-response %}
+{% endswagger %}
+
+```
+curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group' \
+-H 'Content-Type: application/vnd.kafka.json.v2+json' \
+-H 'Accept: application/vnd.kafka.json.v2+json' \
+-H 'Authorization: Bearer $TOKEN' \
+--data-raw '{"auto.offset.reset": "earliest"}'
 ```
 
 
