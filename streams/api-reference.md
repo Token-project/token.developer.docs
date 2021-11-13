@@ -2,7 +2,7 @@
 
 ## Producing messages
 
-{% swagger baseUrl="https://api.token-project.eu" path="/topics/topic" method="post" summary="Creates a topic" %}
+{% swagger baseUrl="http://streams.token-project.eu:8080" path="/topics/topic" method="post" summary="Creates a topic" %}
 {% swagger-description %}
 Creates a topic.
 {% endswagger-description %}
@@ -29,13 +29,13 @@ The topic name
 {% endswagger %}
 
 ```
-curl -L -X POST 'https://api.token-project.eu/streams/topics/topic' \
+curl -L -X POST 'http://streams.token-project.eu:8080/streams/topics/topic' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{"topic_name": "example"}'
 ```
 
-{% swagger baseUrl="https://api.token-project.eu" path="/streams/topic/topic_name" method="post" summary="Produces JSON messages to a topic" %}
+{% swagger baseUrl="http://streams.token-project.eu:8080" path="/streams/topic/topic_name" method="post" summary="Produces JSON messages to a topic" %}
 {% swagger-description %}
 Produces JSON messages to a topic
 {% endswagger-description %}
@@ -67,7 +67,7 @@ Array of JSON Objects
 {% endswagger %}
 
 ```
-curl -L -X POST 'https://api.token-project.eu/streams/consumers/my_consumer' \
+curl -L -X POST 'http://streams.token-project.eu:8080/streams/consumers/my_consumer' \
 -H 'Content-Type: application/vnd.kafka.json.v2+json' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{
@@ -85,7 +85,7 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/my_consumer' \
 ## Consuming messages
 
 
-{% swagger baseUrl="https://api.token-project.eu" path="/streams/consumers/consumer_group" method="post" summary="Creates a new consumer instance" %}
+{% swagger baseUrl="http://streams.token-project.eu:8080" path="/streams/consumers/consumer_group" method="post" summary="Creates a new consumer instance" %}
 {% swagger-description %}
 Creates a new consumer.
 {% endswagger-description %}
@@ -109,7 +109,7 @@ Sets the auto.offset.reset setting for the consumer
 {% swagger-response status="200" description="" %}
 ```json
 {
-    "base_uri": "https://api.token-project.eu/streams/consumers/my_consumer/instances/33707dcc-022d-476e-b8bc-28d0ae2fbb35",
+    "base_uri": "http://streams.token-project.eu:8080/streams/consumers/my_consumer/instances/33707dcc-022d-476e-b8bc-28d0ae2fbb35",
     "instance_id": "33707dcc-022d-476e-b8bc-28d0ae2fbb35"
 }
 ```
@@ -117,7 +117,7 @@ Sets the auto.offset.reset setting for the consumer
 {% endswagger %}
 
 ```
-curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group' \
+curl -L -X POST 'http://streams.token-project.eu:8080/streams/consumers/consumer_group' \
 -H 'Content-Type: application/vnd.kafka.json.v2+json' \
 -H 'Accept: application/vnd.kafka.json.v2+json' \
 -H 'Authorization: Bearer $TOKEN' \
@@ -125,7 +125,7 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group' 
 ```
 
 
-{% swagger baseUrl="https://api.token-project.eu" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/subscription" method="post" summary="Subscribes the consumer to a topic" %}
+{% swagger baseUrl="http://streams.token-project.eu:8080" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/subscription" method="post" summary="Subscribes the consumer to a topic" %}
 {% swagger-description %}
 Subscribes the consumer to a topic
 {% endswagger-description %}
@@ -150,14 +150,14 @@ Empty response
 {% endswagger %}
 
 ```
-curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/subscription' \
+curl -L -X POST 'http://streams.token-project.eu:8080/streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/subscription' \
 -H 'Content-Type: application/vnd.kafka.json.v2+json' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{"topics":["messaging"]}'
 ```
 
 
-{% swagger baseUrl="https://api.token-project.eu" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records" method="get" summary="Consumes messages from a topic" %}
+{% swagger baseUrl="http://streams.token-project.eu:8080" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records" method="get" summary="Consumes messages from a topic" %}
 {% swagger-description %}
 Consumes messages from a topic
 {% endswagger-description %}
@@ -206,7 +206,7 @@ Bearer: $TOKEN
 {% endswagger %}
 
 ```
-curl -L -X GET 'https://api.token-project.eu/streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records' \
+curl -L -X GET 'http://streams.token-project.eu:8080/streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records' \
 -H 'Accept: application/vnd.kafka.json.v2+json' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{"topics":["messaging"]}'
