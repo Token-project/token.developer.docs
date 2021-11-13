@@ -35,7 +35,7 @@ curl -L -X POST 'https://api.token-project.eu/streams/topics/topic' \
 --data-raw '{"topic_name": "example"}'
 ```
 
-{% swagger baseUrl="https://api.token-project.eu" path="topic/topic_name" method="post" summary="Produces JSON messages to a topic" %}
+{% swagger baseUrl="https://api.token-project.eu" path="/streams/topic/topic_name" method="post" summary="Produces JSON messages to a topic" %}
 {% swagger-description %}
 Produces JSON messages to a topic
 {% endswagger-description %}
