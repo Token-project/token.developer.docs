@@ -150,3 +150,59 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group/i
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{"topics":["messaging"]}'
 ```
+
+
+{% swagger baseUrl="https://api.token-project.eu" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records" method="get" summary="Consumes messages into a topic" %}
+{% swagger-description %}
+Consumes messages into a topic
+{% endswagger-description %}
+
+{% swagger-parameter name="Accept" type="string" required="true" in="header" %}
+application/vnd.kafka.json.v2+json
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
+Bearer: $TOKEN
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="" %}
+```json
+[
+  {
+    "topic": "topic_name",
+    "key":"key",
+    "value": {
+        "foo": "bar"
+    },
+    "partition": 0,
+    "offset": 0
+  },
+  {
+    "topic": "topic_name",
+    "key":"key_1",
+    "value": {
+        "foo": "bar"
+    },
+    "partition": 0,
+    "offset": 1
+  },
+  {
+    "topic": "topic_name",
+    "key":"key_2",
+    "value": {
+        "foo": "bar"
+    },
+    "partition": 0,
+    "offset": 2
+  }
+]
+```
+{% endswagger-response %}
+{% endswagger %}
+
+```
+curl -L -X GET 'https://api.token-project.eu/streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records' \
+-H 'Accept: application/vnd.kafka.json.v2+json' \
+-H 'Authorization: Bearer $TOKEN' \
+--data-raw '{"topics":["messaging"]}'
+```
