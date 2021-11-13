@@ -20,19 +20,19 @@ The Token developer platform is organized into four different categories, based 
 
 We have put together a different page for each product to help you get started, which you can access below:
 
-| Category | Service/Product |  |
-| :--- | :--- | :--- |
-| **Blockchain-based Notarization** | Stamping | [Get started](notarization/fundamentals.md) |
-|  | On-Chain anchoring | [Get started](notarization/fundamentals.md) |
-|  | Sign | Get started |
-|  | Canis Major Blockchain Adaptor \(FIWARE\) | Get started |
-|  | LedgerSync \(FIWARE\) | Get started |
-| **Distributed and Decentralized Storage** | Token Storage Network | Get started |
-|  | IPFS Web Gateway | [Get started](storage/ipfs-web-gateway.md) |
-|  | IPFS Storage & Pinning Service | [Get started](storage/ipfs-storage-and-pinning-service/) |
-| **Decentralized and Self-Sovereign Identity** | Token Connect | Get started |
-|  | CERTH SSI | [Get started](ssi/fundamentals.md) |
-| **Events and Message Streaming** | Token Streams | Get started |
+| Category                                      | Service/Product                         |                                                          |
+| --------------------------------------------- | --------------------------------------- | -------------------------------------------------------- |
+| **Blockchain-based Notarization**             | Stamping                                | [Get started](notarization/fundamentals.md)              |
+|                                               | On-Chain anchoring                      | [Get started](notarization/fundamentals.md)              |
+|                                               | Sign                                    | Get started                                              |
+|                                               | Canis Major Blockchain Adaptor (FIWARE) | Get started                                              |
+|                                               | LedgerSync (FIWARE)                     | Get started                                              |
+| **Distributed and Decentralized Storage**     | Token Storage Network                   | Get started                                              |
+|                                               | IPFS Web Gateway                        | [Get started](storage/ipfs-web-gateway.md)               |
+|                                               | IPFS Storage & Pinning Service          | [Get started](storage/ipfs-storage-and-pinning-service/) |
+| **Decentralized and Self-Sovereign Identity** | Token Connect                           | Get started                                              |
+|                                               | CERTH SSI                               | [Get started](ssi/fundamentals.md)                       |
+| **Events and Message Streaming**              | Token Streams                           | [Get started](streams/api-reference.md)                  |
 
 ### Documentation organization
 
@@ -43,4 +43,3 @@ All the services APIs share similar fundamentals, and even include some common e
 * [Developer portal](fundamentals-1/developer-portal.md), [organizations](fundamentals-1/organizations.md), and [apps](fundamentals-1/fundamentals.md)
 * [Authentication](fundamentals-1/auth.md)
 * [Rate limits](fundamentals-1/rate-limits.md)
-
