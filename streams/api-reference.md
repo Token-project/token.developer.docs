@@ -1,104 +1,70 @@
-# Streams API
+# API reference
 
-{% api-method method="post" host="https://api.token-project.eu" path="/topics/topic" %}
-{% api-method-summary %}
-Creates a topic
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.token-project.eu" path="/topics/topic" method="post" summary="Creates a topic" %}
+{% swagger-description %}
 Creates a topic.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter name="Content-Type" type="string" required="true" in="header" %}
 application/json
-{% endapi-method-parameter %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 Bearer: $TOKEN
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="topic_name" type="string" required=true %}
+{% swagger-parameter name="topic_name" type="string" required="true" in="body" %}
 The topic name
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```json
 {
     "message": "created"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-```text
+```
 curl -L -X POST 'https://api.token-project.eu/streams/topics/topic' \
 -H 'Content-Type: application/json' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{"topic_name": "example"}'
 ```
 
-
-{% api-method method="post" host="https://api.token-project.eu" path="consumers/my_consumer" %}
-{% api-method-summary %}
-Creates a new consumer instance
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.token-project.eu" path="consumers/my_consumer" method="post" summary="Creates a new consumer instance" %}
+{% swagger-description %}
 Creates a new consumer.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter name="Content-Type" type="string" required="true" in="header" %}
 application/vnd.kafka.json.v2+json
-{% endapi-method-parameter %}
-{% api-method-parameter name="Accept" type="string" required=true %}
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Accept" type="string" required="true" in="header" %}
 application/vnd.kafka.json.v2+json
-{% endapi-method-parameter %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 Bearer: $TOKEN
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="auto.offset.reset" type="string" required=false %}
+{% swagger-parameter name="auto.offset.reset" type="string" required="false" in="body" %}
 Sets the auto.offset.reset setting for the consumer
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```json
 {
     "base_uri": "https://api.token-project.eu/streams/consumers/my_consumer/instances/33707dcc-022d-476e-b8bc-28d0ae2fbb35",
     "instance_id": "33707dcc-022d-476e-b8bc-28d0ae2fbb35"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-```text
+```
 curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group' \
 -H 'Content-Type: application/vnd.kafka.json.v2+json' \
 -H 'Accept: application/vnd.kafka.json.v2+json' \
@@ -106,36 +72,24 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group' 
 --data-raw '{"auto.offset.reset": "earliest"}'
 ```
 
-
-
-{% api-method method="post" host="https://api.token-project.eu" path="topic/topic_name" %}
-{% api-method-summary %}
+{% swagger baseUrl="https://api.token-project.eu" path="topic/topic_name" method="post" summary="Produces JSON messages to a topic" %}
+{% swagger-description %}
 Produces JSON messages to a topic
-{% endapi-method-summary %}
+{% endswagger-description %}
 
-{% api-method-description %}
-Produces JSON messages to a topic
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=true %}
+{% swagger-parameter name="Content-Type" type="string" required="true" in="header" %}
 application/vnd.kafka.json.v2+json
-{% endapi-method-parameter %}
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% endswagger-parameter %}
+
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 Bearer: $TOKEN
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% endapi-method-request %}
+{% swagger-parameter in="body" name="records" type="Array" required="true" %}
+Array of JSON Objects
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="" %}
 ```json
 {
     "offsets": [
@@ -146,18 +100,17 @@ Bearer: $TOKEN
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-```text
+```
 curl -L -X POST 'https://api.token-project.eu/streams/consumers/my_consumer' \
 -H 'Content-Type: application/vnd.kafka.json.v2+json' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-raw '{
     "records": [
         {
+            "key":"key",
             "value": {
                 "foo": "bar"
             }

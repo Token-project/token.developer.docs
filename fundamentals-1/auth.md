@@ -9,7 +9,7 @@ The Token APIs are secured by generated APP credentials and JWT Bearer Tokens:
 
 Use the [developer portal](https://developers.token-project.eu) to create a new App profile, or delete/revoke an existing App. Navigate to "[Applications](https://developers.token-project.eu/apps)", then click "+ New Application"
 
-![](../.gitbook/assets/testbed-create-app%20%281%29.png)
+![](<../.gitbook/assets/testbed-create-app (1) (1).png>)
 
 ### Generating a JWT Bearer Token
 
@@ -49,7 +49,7 @@ API calls using JWT Bearer Token are [rate limited](rate-limits.md) per endpoint
 
 ### Debugging a JWT Bearer Token
 
-To see detailed info for an access token go to the [Developer Portal](https://developers.token-project.eu)-&gt;[Developer tools](https://developers.token-project.eu/tools/)-&gt;[Access token debugger](https://developers.token-project.eu/tools/debugger) and enter your JWT Token.
+To see detailed info for an access token go to the [Developer Portal](https://developers.token-project.eu)->[Developer tools](https://developers.token-project.eu/tools/)->[Access token debugger](https://developers.token-project.eu/tools/debugger) and enter your JWT Token.
 
 If the token is valid you'll receive a response similar to this:
 
@@ -74,4 +74,3 @@ If the token is valid you'll receive a response similar to this:
   "iat": 1606787228
 }
 ```
-

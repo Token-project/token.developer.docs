@@ -1,85 +1,53 @@
 # Stamp API
 
-{% api-method method="post" host="https://api.token-project.eu" path="/notarization/stamp" %}
-{% api-method-summary %}
-Stamp
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.token-project.eu" path="/notarization/stamp" method="post" summary="Stamp" %}
+{% swagger-description %}
 Creates a timestamp for a given SHA-256 hash hexadecimal digest.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=false %}
+{% swagger-parameter name="Content-Type" type="string" required="false" in="header" %}
 application/x-www-form-urlencoded
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 Bearer: $TOKEN
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% endswagger-parameter %}
 
-{% api-method-body-parameters %}
-{% api-method-parameter name="hash" type="string" required=true %}
+{% swagger-parameter name="hash" type="string" required="true" in="body" %}
 SHA-256 hash
-{% endapi-method-parameter %}
-{% endapi-method-body-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 {
     "transactionId": "1b9e6cb48098bc1fd8d8bd44c53e92c394c06a41ed50ab5845ed3e8b36e9f012"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-```text
+```
 curl -L -X POST 'https://api.token-project.eu:443/notarization/stamp' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 -H 'Authorization: Bearer $TOKEN' \
 --data-urlencode 'hash=$HASH'
 ```
 
-{% api-method method="get" host="https://api.token-project.eu" path="/notarization/stamp/$STAMP" %}
-{% api-method-summary %}
-Get a receipt from a HASH
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.token-project.eu" path="/notarization/stamp/$STAMP" method="get" summary="Get a receipt from a HASH" %}
+{% swagger-description %}
+Retrieves all receipts (also known as proofs) for a certain HASH
+{% endswagger-description %}
 
-{% api-method-description %}
-Retrieves all receipts \(also known as proofs\) for a certain HASH
-{% endapi-method-description %}
-
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=false %}
+{% swagger-parameter name="Content-Type" type="string" required="false" in="header" %}
 application/x-www-form-urlencoded
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 Bearer: $TOKEN
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 [
     {
         "docType": "stamp",
@@ -87,47 +55,35 @@ Bearer: $TOKEN
     }
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-```text
+```
 curl -L -X GET 'https://api.token-project.eu:443/notarization/stamp/$STAMP' \
 -H 'Content-Type: application/x-www-form-urlencoded' \
 -H 'Authorization: Bearer $TOKEN'
 ```
 
-{% api-method method="get" host="https://api.token-project.eu" path="/notarization/blockinfos/stamp/keys/$HASH" %}
-{% api-method-summary %}
-Get a receipt from a Hash \[DEPRECATED\]
-{% endapi-method-summary %}
+{% swagger baseUrl="https://api.token-project.eu" path="/notarization/blockinfos/stamp/keys/$HASH" method="get" summary="Get a receipt from a Hash [DEPRECATED]" %}
+{% swagger-description %}
+Retrieves all receipts (also known as proofs) for a certain hash.
 
-{% api-method-description %}
-Retrieves all receipts \(also known as proofs\) for a certain hash.  
-\[DEPRECATED\] Use get /stamp instead
-{% endapi-method-description %}
+\
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=false %}
+
+\[DEPRECATED] Use get /stamp instead
+{% endswagger-description %}
+
+{% swagger-parameter name="Content-Type" type="string" required="false" in="header" %}
 application/x-www-form-urlencoded
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 Bearer: $TOKEN
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 [
     {
         "docType": "stamp",
@@ -135,40 +91,24 @@ Bearer: $TOKEN
     }
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-{% api-method method="get" host="https://api.token-project.eu" path="/notarization/stamps" %}
-{% api-method-summary %}
-All stamps
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://api.token-project.eu" path="/notarization/stamps" method="get" summary="All stamps" %}
+{% swagger-description %}
 Retrieves all stamps made by the requesting client, ordered by date, from newest to oldest.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Content-Type" type="string" required=false %}
+{% swagger-parameter name="Content-Type" type="string" required="false" in="header" %}
 application/x-www-form-urlencoded
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="Authorization" type="string" required=true %}
+{% swagger-parameter name="Authorization" type="string" required="true" in="header" %}
 Bearer: $TOKEN
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-
-{% endapi-method-response-example-description %}
-
-```text
+{% swagger-response status="200" description="" %}
+```
 [
     {
         "docType": "stamp",
@@ -185,8 +125,5 @@ Bearer: $TOKEN
     ...
 ]
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}
