@@ -85,7 +85,7 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/my_consumer' \
 ## Consuming messages
 
 
-{% swagger baseUrl="https://api.token-project.eu" path="consumers/my_consumer" method="post" summary="Creates a new consumer instance" %}
+{% swagger baseUrl="https://api.token-project.eu" path="/streams/consumers/consumer_group" method="post" summary="Creates a new consumer instance" %}
 {% swagger-description %}
 Creates a new consumer.
 {% endswagger-description %}
@@ -157,9 +157,9 @@ curl -L -X POST 'https://api.token-project.eu/streams/consumers/consumer_group/i
 ```
 
 
-{% swagger baseUrl="https://api.token-project.eu" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records" method="get" summary="Consumes messages into a topic" %}
+{% swagger baseUrl="https://api.token-project.eu" path="streams/consumers/consumer_group/instances/2eb4ab23-0771-496d-8731-510772c454ab/records" method="get" summary="Consumes messages from a topic" %}
 {% swagger-description %}
-Consumes messages into a topic
+Consumes messages from a topic
 {% endswagger-description %}
 
 {% swagger-parameter name="Accept" type="string" required="true" in="header" %}
