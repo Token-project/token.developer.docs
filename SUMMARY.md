@@ -9,7 +9,6 @@
 * [Developer apps](fundamentals-1/fundamentals.md)
 * [Authentication](fundamentals-1/auth.md)
 * [Rate limits](fundamentals-1/rate-limits.md)
-* [Token TestBed](fundamentals-1/token-testbed.md)
 
 ## Notarization APIs <a href="notarization" id="notarization"></a>
 
