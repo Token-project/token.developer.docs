@@ -1,4 +1,4 @@
-# API reference
+# Stream API reference
 
 ## Producing messages
 
