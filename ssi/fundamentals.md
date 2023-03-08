@@ -12,11 +12,12 @@ Privacy is a critical feature of SSI because, without privacy, there is no contr
 
 ## CERTH SSI
 
-Token's CERTH SSI implementation is a platform in which a user can register, get a DID and request credentials. The user can have their credentials stored in their wallet and access them quickly and easily, without downloading any special software. Thus, CERTH’s SSI is functioning as a service \(SSIaS\). 
+TOKEN’s CERTH SSI is a set of services that allow implementing Self-Sovereign Identity ecosystems in order to establish digital trust. Thus, CERTH SSI allows entities to obtain and control a digital identity in order to be able to communicate and share certified data
+between each other in a trustworthy, standardized and privacy-preserving way. Using these services, the entities are able to: 
 
-This solution removes the burden of e-government bodies to maintain their own servers, storage or even custom software as all these functionalities are provided out of the box. 
+- Obtain secure wallets for controlling and managing their Decentralized Identifiers (DIDs) and Verifiable Credentials (VCs)
+- Create and use private communication channels based on Decentralized Identifiers for information exchange
+- Issue, prove, verify and revoke Verifiable Credentials
 
-In this direction, any organization, agency, municipality and governmental service in general can take advantage of the unique characteristics of SSI at no cost and at no time! Following you can find more details how is this achieved and you if you are a public sector service you can apply [https://ssi.token.iti.gr/apply](https://ssi.token.iti.gr/apply) to help you integrate the SSI to any service you require registration/login/verification for user identities. 
-
-Alternatively, just send us an email at sterzi@iti.gr.
+Subsequently, CERTH SSI provides entities with the ability to control identity-related data and consent on what personal information will be disclosed, shared and with whom. In this direction, any person, organization, agency, municipality or governmental service in general can take advantage of the unique characteristics of SSI. CERTH SSI is based on W3C Standards for Decentralized Identifiers and Verifiable Credentials.
 
